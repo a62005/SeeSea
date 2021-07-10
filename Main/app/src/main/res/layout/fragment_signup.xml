@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_frame"
+    tools:context=".room.activity.SignupFragment">
+
+    <TextView
+        android:id="@+id/button_signupBackButton"
+        android:layout_width="50dp"
+        android:layout_height="28dp"
+        android:background="@drawable/shape_login_button"
+        android:gravity="center"
+        android:text="@string/create_decideCancel"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/button_signupDecideButton"
+        app:layout_constraintTop_toTopOf="@+id/button_signupDecideButton"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/button_signupDecideButton"
+        android:layout_width="50dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/shape_login_button"
+        android:gravity="center"
+        android:text="@string/signup_signup"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout_signupDescribeFrame"
+        app:layout_constraintStart_toEndOf="@id/button_signupBackButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout_signupDescribeFrame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView_signupDescribeFrame"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/shape_inner_frame"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <EditText
+            android:id="@+id/editText_signupDescribe"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:hint="@string/signup_signupDescribe"
+            android:layout_margin="2dp"
+            android:textSize="14sp"
+            android:background="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:inputType="textMultiLine"
+            android:importantForAutofill="no" />
+
+        <TextView
+            android:id="@+id/textView_signupDescribeWordNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="2dp"
+            android:text="@string/create_describeWordNumber"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText_signupDescribe" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,123 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.example.seesea"
+        minSdkVersion 24
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+        vectorDrawables.useSupportLibrary = true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    packagingOptions {
+        exclude 'META-INF/atomicfu.kotlin_module'
+    }
+    buildFeatures {
+        viewBinding true
+    }
+
+}
+
+dependencies {
+
+//    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+//    implementation 'androidx.core:core-ktx:1.5.0'
+//    implementation 'androidx.appcompat:appcompat:1.3.0'
+//    implementation 'com.google.android.material:material:1.3.0'
+//    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+//    testImplementation 'junit:junit:4.13.2'
+//    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+//    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    implementation("com.squareup.okhttp3:okhttp:4.9.0")//okhttp，網路請求用
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.1'//coroutine
+    implementation 'com.google.code.gson:gson:2.8.6'//gson，Json轉Gson使用
+
+    implementation 'com.squareup.picasso:picasso:2.71828'//網址圖片轉image
+    implementation 'androidx.recyclerview:recyclerview:1.2.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation "androidx.fragment:fragment-ktx:1.2.5"//fragment共享VM
+
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    implementation 'org.jetbrains:annotations:15.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+    implementation 'com.mcxiaoke.volley:library:1.0.8'
+    kapt 'com.github.bumptech.glide:compiler:4.10.0'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:support-v4:19.1.0'
+    implementation 'com.airbnb.android:lottie:3.7.0'
+    implementation 'com.google.android.flexbox:flexbox:3.0.0'
+
+    implementation 'com.google.android.gms:play-services-maps:17.0.1'
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation "androidx.viewpager2:viewpager2:1.0.0"
+
+    implementation 'com.google.android.material:material:1.1.0' //为了防止不必要的依赖冲突，0.0.3开始需要自行依赖google material库
+    implementation 'com.github.loperSeven:DateTimePicker:0.3.1'//具体版本请看顶部jitpack标识，如0.3.1,仅支持androidx
+
+    implementation "androidx.constraintlayout:constraintlayout:2.0.4"
+
+    implementation "androidx.appcompat:appcompat:$rootProject.appCompatVersion"
+    implementation "androidx.activity:activity-ktx:$rootProject.activityVersion"
+
+
+    // Dependencies for working with Architecture components
+    // You'll probably have to update the version numbers in build.gradle (Project)
+
+
+    // Room components
+    implementation "androidx.room:room-ktx:$rootProject.roomVersion"
+    implementation 'androidx.annotation:annotation:1.1.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    kapt "androidx.room:room-compiler:$rootProject.roomVersion"
+    androidTestImplementation "androidx.room:room-testing:$rootProject.roomVersion"
+
+    // Lifecycle components
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$rootProject.lifecycleVersion"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$rootProject.lifecycleVersion"
+    implementation "androidx.lifecycle:lifecycle-common-java8:$rootProject.lifecycleVersion"
+
+    // Kotlin components
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    api "org.jetbrains.kotlinx:kotlinx-coroutines-core:$rootProject.coroutines"
+    api "org.jetbrains.kotlinx:kotlinx-coroutines-android:$rootProject.coroutines"
+
+    // UI
+    implementation "androidx.constraintlayout:constraintlayout:$rootProject.constraintLayoutVersion"
+    implementation "com.google.android.material:material:$rootProject.materialVersion"
+
+    // Testing
+    testImplementation "junit:junit:$rootProject.junitVersion"
+    androidTestImplementation "androidx.arch.core:core-testing:$rootProject.coreTestingVersion"
+    androidTestImplementation ("androidx.test.espresso:espresso-core:$rootProject.espressoVersion", {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    androidTestImplementation "androidx.test.ext:junit:$rootProject.androidxJunitVersion"
+}

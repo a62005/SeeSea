@@ -1,0 +1,338 @@
+<resources>
+    <string name="app_name">SeeSea</string>
+    <string name="layout_roomList">Room List</string>
+    <string name="layout_chatBox">Chat Box</string>
+    <string name="layout_myselfDetail">Myself Detail</string>
+
+
+    <string name="item_nameOfRoom">item_room</string>
+    <string name="room_roomName">房間名稱</string>
+    <string name="room_hostName">主辦人名稱</string>
+    <string name="room_theNumberOfParticipants">需求人數</string>
+    <string name="room_diveType">自潛/水肺</string>
+    <string name="room_address">地點</string>
+    <string name="room_time">MM/DD hh/mm</string>
+    <string name="room_howToGo">自行前往/提供車位</string>
+    <string name="room_image">房間圖片</string>
+    <string name="room_reload">重新整理</string>
+    <string name="room_title">活動列表</string>
+    <string name="room_hint">噢..現在沒有房間..</string>
+    <string name="add_word">Add word</string>
+    <string name="room_favorite">關注</string>
+    <string name="recommend_hint">若推薦不符需求可以去個人資料修改Tag哦</string>
+
+    <string name="roomList">房間列表</string>
+    <string name="chatBox">聊天室</string>
+    <string name="participateRoom">參加列表</string>
+    <string name="myselfDetail">個人資料</string>
+    <string name="userName">使用者名稱</string>
+
+    <string name="search">請輸入關鍵字</string>
+
+    <string name="create_back">返回</string>
+    <string name="create_create">想舉辦水肺還是自潛呢?</string>
+    <string name="create_title">建立活動</string>
+    <string name="create_name">活動名稱</string>
+    <string name="create_help">幫助</string>
+    <string name="create_roomName">為這個活動起個特別的名字吧！</string>
+    <string name="create_imageWord">有照片的揪團成功率提高87%</string>
+    <string name="create_imagePickBtn">點我選照片</string>
+    <string name="create_image">參考圖片 (選填)</string>
+    <string name="create_selectDivingType">選擇潛水種類</string>
+    <string name="create_selectDivingLocation">選擇潛水區域</string>
+    <string name="create_need">證照需求</string>
+    <string name="create_divingPlace">例如:龍洞灣、小琉球</string>
+    <string name="create_date">活動日期</string>
+    <string name="create_time">時間</string>
+    <string name="create_people">活動人數</string>
+    <string name="create_peopleInput">最少2人</string>
+    <string name="create_transportation">交通方式</string>
+    <string name="create_describe">幫這個活動多補充點資訊吧~(200字內)</string>
+    <string name="create_describeWordNumber">0/200</string>
+    <string name="create_preview">預覽</string>
+    <string name="create_decideCreate">確定</string>
+    <string name="create_decideCancel">取消</string>
+    <string name="create_createSuccessHint1">恭喜你您創建成功！</string>
+    <string name="create_createSuccessHint2">接下來請靜待其他人報名您的活動唷</string>
+    <string name="create_divingFree">自由潛水</string>
+    <string name="create_divingScuba">水肺潛水</string>
+    <string name="create_area">地區</string>
+    <string name="create_place">地點</string>
+    <string name="create_cost">地點</string>
+    <string name="create_describe1">活動說明 (選填)</string>
+    <string name="create_purpose">活動類型</string>
+
+    <string-array name="create_divingType">
+        <item>選擇潛水種類</item>
+        <item>自由潛水</item>
+        <item>水肺潛水</item>
+    </string-array>
+    <string name="create_selectDivingLevel">選擇潛水證照</string>
+    <string-array name="create_divingLevelByScuba">
+        <item>選擇潛水證照</item>
+        <item>經驗不拘</item>
+        <item>OW</item>
+        <item>AOW</item>
+    </string-array>
+    <string-array name="create_divingLevelByFree">
+        <item>選擇潛水證照</item>
+        <item>經驗不拘</item>
+        <item>AIDA 1</item>
+        <item>AIDA 2</item>
+        <item>AIDA 3</item>
+    </string-array>
+    <string-array name="create_divingLocation">
+        <item>選擇潛水區域</item>
+        <item>北海岸</item>
+        <item>墾丁</item>
+        <item>室內/東部</item>
+        <item>綠島</item>
+        <item>蘭嶼</item>
+        <item>澎湖</item>
+        <item>小琉球</item>
+    </string-array>
+    <string-array name="create_divingPlace">
+        <item>選擇潛水地點</item>
+    </string-array>
+    <string-array name="create_transportation">
+        <item>選擇交通方式</item>
+        <item>參加者自行前往</item>
+        <item>主辦人提供車位</item>
+        <item>一起搭大眾交通</item>
+    </string-array>
+    <string-array name="create_estimateCost">
+        <item>預估花費</item>
+        <item>2000 元以下</item>
+        <item>2000 ~ 5000 元</item>
+        <item>5000 ~ 10000 元</item>
+        <item>無限制</item>
+    </string-array>
+    <string-array name="create_purpose">
+        <item>選擇活動類型</item>
+        <item>一般揪團</item>
+        <item>潛店潛導帶潛</item>
+        <item>教練開課</item>
+        <item>其他</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="activity_time">MM/DD(日) HH/MM</string>
+    <string name="activity_status">(揪團中)</string>
+    <string name="activity_item">選項</string>
+    <string name="activity_back">返回</string>
+    <string name="activity_cancel">取消</string>
+    <string name="activity_pullOut">退出</string>
+    <string name="activity_divingType">自由潛水</string>
+    <string name="activity_divingLevel">AIDA 2</string>
+    <string name="activity_divingArea">北部</string>
+    <string name="activity_divingPlace">潮境公園</string>
+    <string name="activity_describe">歡迎大家來玩～</string>
+    <string name="activity_participantWord1">-缺</string>
+    <string name="activity_participantNumber">3</string>
+    <string name="activity_participantWord2">人</string>
+    <string name="activity_transportation">主辦人提供車位</string>
+    <string name="activity_signup">我要報名</string>
+    <string name="activity_signupDescribe">活動說明</string>
+    <string name="activity_signupStatus">報名狀況</string>
+    <string name="activity_message">留言區</string>
+    <string name="activity_host">主辦人</string>
+    <string name="activity_estimatedCost">預估花費 :</string>
+    <string name="activity_estimatedCostInput">1000 ~ 3000 元</string>
+    <string name="activity_modify">修改活動資訊</string>
+
+    <string name="aItem_close">取消活動</string>
+    <string name="aItem_pullOut">退出活動</string>
+    <string name="aItem_cancel">取消報名</string>
+    <string name="aItem_hostRights">人員列表</string>
+    <string name="aItem_report">檢舉</string>
+
+
+    <string-array name="activityStatus">
+        <item>(錯誤)</item>
+        <item>(揪團中)</item>
+        <item>(人員已滿)</item>
+        <item>(滿團)</item>
+        <item>(已結束)</item>
+        <item>(流團)</item>
+    </string-array>
+
+    <string name="signup_signupDescribe">有什麼想對主辦人說的嗎</string>
+    <string name="signup_signup">送出</string>
+
+    <string name="user_setting">設定</string>
+    <string name="user_userImage">更換大頭貼</string>
+    <string name="user_userNickName">暱稱</string>
+    <string name="user_userName">真實姓名</string>
+    <string name="user_userNameHide">(未公開)</string>
+    <string name="user_userNameNoHide">(不公開)</string>
+    <string name="user_userAge">25</string>
+    <string name="user_userDescribe">自我介紹</string>
+    <string name="user_phone">手機(不公開)：</string>
+    <string name="user_phoneInput">0900000000</string>
+    <string name="user_email">信箱(不公開)：</string>
+    <string name="user_emailInput">google@hotmail.com</string>
+    <string name="user_tag">Diving Tag</string>
+    <string name="userDetail_logout">登出</string>
+    <string name="userDetail_modifyDetail">修改個人資料</string>
+    <string name="userDetail_modifyPassword">修改個人資料</string>
+    <string name="user_userTagCancelButton">X</string>
+    <string name="user_userDetail">個人資料</string>
+    <string name="user_userRoom">相關活動清單</string>
+    <string name="user_describe">幫自己增加個自我介紹，讓別人多了解你哦！</string>
+
+    <string name="modify_title">點擊即可修改</string>
+    <string name="modify_ok">完成</string>
+
+
+    <string name="participate_participating">參加中</string>
+    <string name="participate_signingUp">審核中</string>
+    <string name="participate_finish">已結束</string>
+    <string name="participate_noData">目前沒有資料哦～</string>
+    <string name="participate_noSingingUp">趕快找個活動報名吧！</string>
+    <string name="participate_userHost">-主辦-</string>
+    <string name="participate_userParticipate">-參加-</string>
+
+    <string-array name="hostStatus">
+        <item>-主辦-</item>
+        <item>-參加-</item>
+    </string-array>
+
+    <string name="prompt_email">Account</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Login</string>
+    <string name="action_sign_in_short">Register</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="login_or">OR</string>
+    <string name="login_welcome">Welcome to</string>
+    <string name="login_forgetAccount">Forgot your password?</string>
+    <string name="forgot_hint">怎麼這麼不小心呢~</string>
+    <string name="forgot_hint1">真的忘記密碼了嗎??按下確定後系統將會</string>
+    <string name="forgot_hint2">寄送一組新密碼到您的信箱，登入後再去</string>
+    <string name="forgot_hint3">個人資料頁面修改密碼哦</string>
+
+    <string name="signIp_checkLong">(長度不足)</string>
+    <string name="signIp_accountRepeat">(帳號重複)</string>
+
+    <string name="enterError_hint">哎呀！好像有東西輸入錯誤</string>
+    <string name="enterError_hint2">再幫我檢查一下 QQ</string>
+    <string name="enterError_ok">好的</string>
+
+    <string name="signIn_account">帳號</string>
+    <string name="signIn_password">密碼</string>
+    <string name="signIn_passwordConfirm">確認密碼</string>
+    <string name="signIn_passwordConfirmHint">請再輸入一次密碼</string>
+    <string name="signIn_name">姓名</string>
+    <string name="signIn_nickName">暱稱</string>
+    <string name="signIn_age">年齡</string>
+    <string name="signIn_phone">手機</string>
+    <string name="signIn_email">信箱</string>
+    <string name="signIn_accountInput">輸入6~12英文或數字</string>
+    <string name="signIn_passwordInput">輸入6~12英文或數字</string>
+    <string name="signIn_nameInput">輸入姓名</string>
+    <string name="signIn_nickNameInput">輸入暱稱</string>
+    <string name="signIn_ageInput">輸入年齡</string>
+    <string name="signIn_phoneInput">輸入手機</string>
+    <string name="signIn_emailInput">輸入信箱</string>
+    <string name="signIn_title">帳號註冊</string>
+    <string name="signIn_cancel">取消</string>
+    <string name="signIn_complete">完成</string>
+    <string name="signIn_next">下一步</string>
+    <string name="signIn_area">偏好的潛水地點</string>
+    <string name="signIn_divingType">偏好的潛水種類</string>
+    <string name="signIn_purpose">想透過APP尋找的潛水類型</string>
+    <string name="signIn_bothDiving">兩者皆有</string>
+    <string name="signIn_other">其他</string>
+    <string name="signIn_purposeA">一般潛友揪團</string>
+    <string name="signIn_purposeB">潛店,潛導帶潛</string>
+    <string name="signIn_purposeC">教練開課尋找學員</string>
+    <string name="signIn_confirm">創建帳號成功！</string>
+    <string name="signIn_confirmHint">趕快找個活動參加吧</string>
+    <string name="signIn_phoneRepeat">(手機重複)</string>
+    <string name="signIn_isExperience">您的潛水經驗</string>
+    <string name="signIn_noExperience">無或較少經驗</string>
+    <string name="signIn_junior">一般</string>
+    <string name="signIn_senior">資深</string>
+    <string name="signIn_double">(可複選)</string>
+    <string name="signIn_ok">確定</string>
+    <string name="signIn_resetCheckKey">確認碼</string>
+
+    <string-array name="signIn_transportation">
+        <item>選擇交通方式</item>
+        <item>自行前往(含載潛友)</item>
+        <item>搭潛友的車</item>
+        <item>跟潛友搭大眾交通</item>
+    </string-array>
+
+    <string name="cBox_title">聊聊</string>
+    <string name="cBox_boxName">活動名稱</string>
+    <string name="cBox_peopleNumber">(3)</string>
+
+    <string name="rights_participant">已審核</string>
+    <string name="rights_signingUp">未審核</string>
+    <string name="rights_agree">同意</string>
+    <string name="rights_decide">確定</string>
+    <string name="rights_leave">退出</string>
+    <string name="rights_full">宣告滿團</string>
+    <string name="rights_noSignUp">目前沒有人報名哦</string>
+    <string name="rights_declareHint1">確定要宣告滿團？</string>
+    <string name="rights_declareHint2">一旦宣告滿團將無法取消活動，直到活動結束或有潛友退出。</string>
+    <string name="rights_date">報名時間:</string>
+
+    <string name="search_title">搜尋設定</string>
+    <string name="search_divingType">潛水種類</string>
+    <string name="search_divingLevel">難易度</string>
+    <string name="search_userWant">活動性質</string>
+    <string name="search_userWantFree">一般休閒</string>
+    <string name="search_area">區域</string>
+    <string name="search_areaNorth">北海岸</string>
+    <string name="search_areaSouth">墾丁</string>
+    <string name="search_areaMiddle">室內/東部</string>
+    <string name="search_areaGreenIsland">綠島</string>
+    <string name="search_areaLanYu">蘭嶼</string>
+    <string name="search_areaPengHu">澎湖</string>
+    <string name="search_areaLiuQuiu">小琉球</string>
+    <string name="search_cost">預估費用</string>
+    <string name="search_costLevel1">2000元以下</string>
+    <string name="search_costLevel2">5000元以下</string>
+    <string name="search_costLevel3">一萬元以下</string>
+    <string name="search_costLevel4">無限制</string>
+    <string name="search_send">搜尋</string>
+    <string name="search_clear">清除</string>
+    <string name="search_hint">使用關鍵字搜尋潛點</string>
+    <string name="search_hint2">請輸入關鍵字或點擊下列關鍵字</string>
+    <string name="search_purposeA">一般揪團</string>
+    <string name="search_purposeB">潛店帶潛</string>
+    <string name="search_purposeC">教練開課</string>
+    <string name="search_element">入門</string>
+    <string name="search_junior">ㄧ般</string>
+    <string name="search_senior">進階</string>
+
+    <string name="low_hint1">由於您的潛水經驗較少(或無經驗)</string>
+    <string name="low_hint2">建議您參加由專業教練陪同的潛水活動哦！</string>
+    <string name="low_check1">之後不再顯示</string>
+
+    <string name="message_hint1">留個言跟其他潛友一起互動吧!</string>
+    <string name="message_delete">刪除</string>
+
+    <string name="verified_hint">Oh！您的帳號尚未驗證</string>
+    <string name="verified_hint1">趕快去信箱進行驗證吧</string>
+
+    <string name="map_hostActivity">查看舉辦中的活動</string>
+
+    <string name="modify_activityHint1">修改完成！</string>
+    <string name="modify_activityHint2">提醒您，一但宣告滿團將無法修改</string>
+    <string name="modify_user">修改個人資料</string>
+    <string name="modify_userHint2">提醒您，過度修改會讓別人認不出來哦</string>
+    <string name="modify_password">修改密碼</string>
+    <string name="modify_oldPassword">舊密碼</string>
+    <string name="modify_newPassword">新密碼</string>
+    <string name="modify_checkNewPassword">確認新密碼</string>
+    <string name="modify_oldPasswordHint">請輸入舊密碼</string>
+    <string name="modify_checkPassword">密碼錯誤</string>
+    <string name="modify_userTag">新增Tag</string>
+
+</resources>

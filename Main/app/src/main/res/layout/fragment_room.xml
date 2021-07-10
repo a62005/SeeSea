@@ -1,0 +1,670 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_activityRoom"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".room.activity.RoomFragment">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/modifyButton"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="18dp"
+                android:background="@drawable/shape_item_search"
+                android:gravity="center"
+                android:text="@string/activity_modify"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/textView_activityName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView_activityName" />
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:background="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView_activityBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:background="@color/white"
+                android:contentDescription="@string/create_back"
+                android:src="@drawable/activity_back"
+                app:layout_constraintBottom_toBottomOf="@+id/textView3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView_activityHostName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/room_hostName"
+                android:textColor="@color/navy_blue"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/card_activityHost"
+                app:layout_constraintStart_toEndOf="@+id/card_activityHost" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_activityHost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="18dp"
+                app:cardPreventCornerOverlap="false"
+                app:layout_constraintStart_toStartOf="@+id/imageView11"
+                app:layout_constraintTop_toBottomOf="@+id/imageView11">
+
+                <ImageView
+                    android:id="@+id/imageView_activityHostImage"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:contentDescription="@string/room_hostName"
+                    android:src="@drawable/activity_host_image"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="parent" />
+            </androidx.cardview.widget.CardView>
+
+
+            <ImageView
+                android:id="@+id/imageView_activityItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:contentDescription="@string/activity_item"
+                android:src="@drawable/activity_item"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/textView3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView_activityImage"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:contentDescription="@string/room_image"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3"
+                tools:src="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/textView_activityName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/room_roomName"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView_activityImage" />
+
+            <TextView
+                android:id="@+id/textView_activityDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/activity_time"
+                android:textColor="@color/navy_blue"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/textView_activityDivingArea"
+                app:layout_constraintTop_toBottomOf="@+id/textView_activityDivingArea" />
+
+            <TextView
+                android:id="@+id/textView_activityStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="@string/activity_status"
+                app:layout_constraintBottom_toBottomOf="@+id/textView47"
+                app:layout_constraintStart_toEndOf="@+id/textView47" />
+
+            <TextView
+                android:id="@+id/textView_activityDivingType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/activity_divingType"
+                android:textColor="@color/navy_blue"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/imageView9"
+                app:layout_constraintTop_toBottomOf="@+id/textView_activityName" />
+
+            <TextView
+                android:id="@+id/textView_activitySeparateBar1"
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="8dp"
+                android:background="@color/gray_light"
+                app:layout_constraintBottom_toBottomOf="@+id/textView_activityDivingType"
+                app:layout_constraintStart_toEndOf="@+id/textView_activityDivingType"
+                app:layout_constraintTop_toTopOf="@+id/textView_activityDivingType" />
+
+            <TextView
+                android:id="@+id/textView_activityDivingLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/activity_divingLevel"
+                android:textColor="@color/navy_blue"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView_activityDivingType"
+                app:layout_constraintStart_toEndOf="@+id/textView_activitySeparateBar1"
+                app:layout_constraintTop_toTopOf="@+id/textView_activityDivingType" />
+
+            <TextView
+                android:id="@+id/textView_activityDivingArea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/activity_divingArea"
+                android:textColor="@color/navy_blue"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/textView_activityDivingType"
+                app:layout_constraintTop_toBottomOf="@+id/textView_activityDivingType" />
+
+            <TextView
+                android:id="@+id/textView_activitySeparateBar2"
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="8dp"
+                android:background="@color/gray_light"
+                app:layout_constraintBottom_toBottomOf="@+id/textView_activityDivingArea"
+                app:layout_constraintStart_toEndOf="@+id/textView_activityDivingArea"
+                app:layout_constraintTop_toTopOf="@+id/textView_activityDivingArea" />
+
+            <TextView
+                android:id="@+id/textView_activityDivingPlace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/activity_divingPlace"
+                android:textColor="@color/navy_blue"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView_activityDivingArea"
+                app:layout_constraintStart_toEndOf="@+id/textView_activitySeparateBar2"
+                app:layout_constraintTop_toTopOf="@+id/textView_activityDivingArea" />
+
+            <ImageView
+                android:id="@+id/imageView_activityMyFavourite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:contentDescription="@string/room_favorite"
+                app:layout_constraintBottom_toBottomOf="@+id/textView3"
+                app:layout_constraintEnd_toEndOf="@+id/textView3"
+                app:layout_constraintTop_toTopOf="@+id/textView3"
+                app:srcCompat="@drawable/activity_heart_unclick" />
+
+            <TextView
+                android:id="@+id/textView_activityParticipantWord1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="@string/activity_participantWord1"
+                app:layout_constraintBottom_toBottomOf="@id/textView_activityStatus"
+                app:layout_constraintStart_toEndOf="@+id/textView_activityStatus" />
+
+            <TextView
+                android:id="@+id/textView_lackNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:text="@string/activity_participantNumber"
+                app:layout_constraintBottom_toBottomOf="@+id/textView_activityParticipantWord1"
+                app:layout_constraintStart_toEndOf="@+id/textView_activityParticipantWord1"
+                app:layout_constraintTop_toTopOf="@+id/textView_activityParticipantWord1" />
+
+            <TextView
+                android:id="@+id/textView_activityParticipantWord2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:text="@string/activity_participantWord2"
+                app:layout_constraintBottom_toBottomOf="@+id/textView_lackNumber"
+                app:layout_constraintStart_toEndOf="@+id/textView_lackNumber"
+                app:layout_constraintTop_toTopOf="@+id/textView_lackNumber" />
+
+            <TextView
+                android:id="@+id/textView_activityTransportation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/activity_transportation"
+                android:textColor="@color/gray_light"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView8"
+                app:layout_constraintStart_toStartOf="@+id/imageView8"
+                app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+            <TextView
+                android:id="@+id/textView_estimateCostInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_estimatedCostInput"
+                android:textColor="@color/gray_light"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView12"
+                app:layout_constraintStart_toStartOf="@+id/imageView12"
+                app:layout_constraintTop_toTopOf="@+id/textView_activityTransportation" />
+
+            <TextView
+                android:id="@+id/textView_activityDescribe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="26dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/activity_describe"
+                android:textColor="@color/navy_blue"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@+id/textView_activityDivingArea"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/light_blue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView_activityTransportation" />
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_marginTop="36dp"
+                android:background="@color/light_blue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView_activityDescribe" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView_signupPpl"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView47"
+                app:stackFromEnd="true"
+                tools:itemCount="2"
+                tools:listitem="@layout/item_applicant_photo" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/activity_signupDescribe"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/card_activityHost"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toStartOf="@+id/imageView12"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card_activityHost"
+                app:srcCompat="@drawable/foot"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/textView_activityDivingType"
+                app:layout_constraintStart_toStartOf="@+id/textView_activityName"
+                app:layout_constraintTop_toTopOf="@+id/textView_activityDivingType"
+                app:srcCompat="@drawable/diving"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/textView_activityDivingArea"
+                app:layout_constraintStart_toStartOf="@+id/imageView9"
+                app:layout_constraintTop_toTopOf="@+id/textView_activityDivingArea"
+                app:srcCompat="@drawable/location"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/textView_activityDate"
+                app:layout_constraintStart_toStartOf="@+id/imageView10"
+                app:layout_constraintTop_toTopOf="@+id/textView_activityDate"
+                app:srcCompat="@drawable/ic_baseline_access_time_24"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toStartOf="@+id/imageView20"
+                app:layout_constraintStart_toEndOf="@+id/imageView8"
+                app:layout_constraintTop_toTopOf="@+id/imageView8"
+                app:srcCompat="@drawable/ic_baseline_attach_money_24"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/textView45"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_host"
+                android:textColor="@color/gray_light"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/textView_activityHostName"
+                app:layout_constraintTop_toTopOf="@+id/card_activityHost" />
+
+            <TextView
+                android:id="@+id/textView47"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/activity_signupStatus"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/textView2"
+                app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+            <TextView
+                android:id="@+id/textView49"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/light_blue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recyclerView_signupPpl" />
+
+            <TextView
+                android:id="@+id/textView50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="128dp"
+                android:text="@string/activity_message"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/textView47"
+                app:layout_constraintTop_toBottomOf="@id/textView49" />
+
+            <TextView
+                android:id="@+id/activityCancelButton"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginEnd="22dp"
+                android:background="@drawable/shape_login_button"
+                android:gravity="center"
+                android:text="@string/aItem_cancel"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView_activityParticipantWord2"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/activityHostRightsButton"
+                android:layout_width="125dp"
+                android:layout_height="36dp"
+                android:layout_marginEnd="22dp"
+                android:background="@drawable/shape_login_button"
+                android:gravity="center"
+                android:text="@string/aItem_hostRights"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView_activityParticipantWord2"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/activityPurpose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:text="@string/signIn_purposeA"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView2"
+                app:layout_constraintStart_toEndOf="@+id/textView76" />
+
+            <TextView
+                android:id="@+id/textView76"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="-"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView2"
+                app:layout_constraintStart_toEndOf="@+id/textView2" />
+
+            <RelativeLayout
+                android:id="@+id/rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView50">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="18dp"
+                    android:layout_marginTop="12dp"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:itemCount="4"
+                    tools:listitem="@layout/item_message" />
+            </RelativeLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="156dp"
+                app:cardCornerRadius="20dp"
+                app:cardPreventCornerOverlap="false"
+                app:layout_constraintStart_toStartOf="@+id/rl"
+                app:layout_constraintTop_toBottomOf="@+id/rl">
+
+
+                <ImageView
+                    android:id="@+id/message_userImage"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:srcCompat="@drawable/activity_host_image"
+                    tools:ignore="ContentDescription" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textView83"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/shape_search_frame"
+                app:layout_constraintBottom_toBottomOf="@+id/message_messageInput"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/cardView2"
+                app:layout_constraintTop_toTopOf="@+id/cardView2" />
+
+            <EditText
+                android:id="@+id/message_messageInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="40dp"
+                android:background="@null"
+                android:hint="@string/message_hint1"
+                android:importantForAutofill="no"
+                android:inputType="textMultiLine"
+                android:maxLength="50"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView83"
+                app:layout_constraintEnd_toEndOf="@+id/textView83"
+                app:layout_constraintStart_toEndOf="@+id/cardView2"
+                app:layout_constraintTop_toTopOf="@+id/textView83" />
+
+            <ImageView
+                android:id="@+id/message_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView91"
+                app:layout_constraintEnd_toEndOf="@+id/textView83"
+                app:layout_constraintTop_toTopOf="@+id/textView91"
+                app:srcCompat="@drawable/send" />
+
+            <TextView
+                android:id="@+id/textView85"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="140dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/message_messageInput" />
+
+            <TextView
+                android:id="@+id/textView91"
+                android:layout_width="20dp"
+                android:layout_height="19dp"
+                app:layout_constraintBottom_toBottomOf="@+id/message_messageInput"
+                app:layout_constraintEnd_toEndOf="@+id/message_messageInput"
+                app:layout_constraintStart_toStartOf="@+id/message_messageInput" />
+
+            <ImageView
+                android:id="@+id/imageView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView12"
+                app:layout_constraintTop_toTopOf="@+id/imageView12"
+                app:srcCompat="@drawable/people" />
+
+            <TextView
+                android:id="@+id/activityParticipantNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4人團"
+                android:textColor="@color/gray_light"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView20"
+                app:layout_constraintStart_toStartOf="@+id/imageView20"
+                app:layout_constraintTop_toTopOf="@+id/textView_estimateCostInput" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/button_activitySignup"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#42a5f5"
+        android:gravity="center"
+        android:text="@string/activity_signup"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/fragment_activitySignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <FrameLayout
+        android:id="@+id/fragment_hostRights"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <FrameLayout
+        android:id="@+id/layout_userDetail"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+    </FrameLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_notVerifiedYet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <include
+            android:id="@+id/activity_notVerifiedYet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/layout_not_verified_yet"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+        </include>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

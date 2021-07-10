@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4323232"
+    tools:context=".map.mapSearch.MapSearchFragment">
+
+    <ImageView
+        android:id="@+id/search_backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:src="@drawable/close"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView68"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/search_area"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:singleSelection="true"
+        android:theme="@style/MyChip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView68">
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:flexWrap="wrap"
+            app:justifyContent="center">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/north"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="4dp"
+                android:text="@string/search_areaNorth"
+                android:textColor="@color/white"
+                app:chipBackgroundColor="@color/gray_light" />
+
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/south"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:text="@string/search_areaSouth"
+                android:textColor="@color/white"
+                app:chipBackgroundColor="@color/gray_light" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/inside"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="4dp"
+                android:text="@string/search_areaMiddle"
+                android:textColor="@color/white"
+                app:chipBackgroundColor="@color/gray_light" />
+
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/greenIsland"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="4dp"
+                android:text="@string/search_areaGreenIsland"
+                android:textColor="@color/white"
+                app:chipBackgroundColor="@color/gray_light" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/lanYu"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="4dp"
+                android:text="@string/search_areaLanYu"
+                android:textColor="@color/white"
+                app:chipBackgroundColor="@color/gray_light"  />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/pengHu"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="4dp"
+                android:text="@string/search_areaPengHu"
+                android:textColor="@color/white"
+                app:chipBackgroundColor="@color/gray_light" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/liuQuiu"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="4dp"
+                android:text="@string/search_areaLiuQuiu"
+                android:textColor="@color/white"
+                app:chipBackgroundColor="@color/gray_light" />
+        </com.google.android.flexbox.FlexboxLayout>
+    </com.google.android.material.chip.ChipGroup>
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/divingType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:singleSelection="true"
+        android:theme="@style/MyChip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView69">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/freeDiving"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/create_divingFree"
+            android:textColor="@color/white"
+            app:chipBackgroundColor="@color/gray_light"/>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/scubaDiving"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/create_divingScuba"
+            android:textColor="@color/white"
+            app:chipBackgroundColor="@color/gray_light"/>
+    </com.google.android.material.chip.ChipGroup>
+
+    <TextView
+        android:id="@+id/textView69"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/search_divingType"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/area" />
+
+
+    <TextView
+        android:id="@+id/textView70"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/search_divingLevel"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divingType" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:singleSelection="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView70">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/element"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/search_element"
+            android:textColor="@color/white"
+            app:chipBackgroundColor="@color/gray_light" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/junior"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/search_junior"
+            android:textColor="@color/white"
+            app:chipBackgroundColor="@color/gray_light" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/senior"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/search_senior"
+            android:textColor="@color/white"
+            app:chipBackgroundColor="@color/gray_light" />
+    </com.google.android.material.chip.ChipGroup>
+
+    <TextView
+        android:id="@+id/search_sendButton"
+        android:layout_width="60dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/shape_login_button"
+        android:gravity="center"
+        android:text="@string/search_send"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

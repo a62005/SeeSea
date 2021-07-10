@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_maps">
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:context=".map.MapsFragment" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_divingPoint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:itemCount="1"
+        tools:listitem="@layout/item_diving_point"/>
+
+    <TextView
+        android:id="@+id/map_searchFrame"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginHorizontal="46dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_search_frame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/map_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/map_searchFrame"
+        app:layout_constraintStart_toStartOf="@+id/map_searchFrame"
+        app:layout_constraintTop_toTopOf="@+id/map_searchFrame"
+        app:srcCompat="@drawable/search_noclick" />
+
+    <EditText
+        android:id="@+id/map_searchHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:textColor="@color/gray_light"
+        android:textSize="15sp"
+        android:background="@null"
+        android:hint="@string/search_hint"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@+id/map_searchFrame"
+        app:layout_constraintStart_toEndOf="@+id/map_search"
+        app:layout_constraintTop_toTopOf="@+id/map_searchFrame" />
+
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        app:layout_constraintStart_toStartOf="@+id/map_searchFrame"
+        app:layout_constraintTop_toBottomOf="@+id/map_searchFrame">
+        <include
+            android:id="@+id/include_searchMarker"
+            layout="@layout/item_search" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/layout_holdingActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/filter"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/map_searchFrame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/map_searchFrame"
+        app:layout_constraintTop_toTopOf="@+id/map_searchFrame"
+        app:srcCompat="@drawable/ic_filter" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_mapSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="46dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/shape_inner_frame"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/map_searchFrame"
+        tools:itemCount="4"
+        tools:listitem="@layout/item_map_search" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

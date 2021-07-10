@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:background="@drawable/shape_pbox_participant"
+    android:id="@+id/item_pBox">
+
+    <TextView
+        android:id="@+id/textView_pBoxRoomName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="18dp"
+        android:text="@string/room_roomName"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_pBoxRoomStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="9dp"
+        android:text="@string/activity_status"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_pBoxUserStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="@string/participate_userHost"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_pBoxRoomStatus"
+        app:layout_constraintTop_toBottomOf="@+id/textView_pBoxRoomStatus" />
+
+    <TextView
+        android:id="@+id/textView_pBoxDivingType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="4dp"
+        android:text="@string/activity_divingType"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView_pBoxRoomName"
+        app:layout_constraintTop_toBottomOf="@+id/textView_pBoxRoomName" />
+
+    <TextView
+        android:id="@+id/textView_pBoxSeparateBar"
+        android:layout_width="1dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="10dp"
+        android:background="@color/gray_light"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_pBoxDivingType"
+        app:layout_constraintStart_toEndOf="@+id/textView_pBoxDivingType"
+        app:layout_constraintTop_toTopOf="@+id/textView_pBoxDivingType" />
+
+    <TextView
+        android:id="@+id/textView_pBoxDivingPlace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/activity_divingPlace"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_pBoxDivingType"
+        app:layout_constraintStart_toEndOf="@+id/textView_pBoxSeparateBar"
+        app:layout_constraintTop_toTopOf="@+id/textView_pBoxDivingType" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
